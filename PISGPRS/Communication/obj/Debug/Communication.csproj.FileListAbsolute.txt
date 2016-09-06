@@ -1,0 +1,18 @@
+E:\Front end GPRS\PISGPRS\Communication\bin\Debug\Communication.dll
+E:\Front end GPRS\PISGPRS\Communication\bin\Debug\Communication.pdb
+E:\Front end GPRS\PISGPRS\Communication\bin\Debug\Common.dll
+E:\Front end GPRS\PISGPRS\Communication\bin\Debug\Logger.dll
+E:\Front end GPRS\PISGPRS\Communication\bin\Debug\Common.pdb
+E:\Front end GPRS\PISGPRS\Communication\bin\Debug\Logger.pdb
+E:\Front end GPRS\PISGPRS\Communication\obj\Debug\ResolveAssemblyReference.cache
+E:\Front end GPRS\PISGPRS\Communication\obj\Debug\Communication.dll
+E:\Front end GPRS\PISGPRS\Communication\obj\Debug\Communication.pdb
+D:\Swati\PIS GPRS\PISGPRS\Communication\bin\Debug\Communication.dll
+D:\Swati\PIS GPRS\PISGPRS\Communication\bin\Debug\Communication.pdb
+D:\Swati\PIS GPRS\PISGPRS\Communication\bin\Debug\Common.dll
+D:\Swati\PIS GPRS\PISGPRS\Communication\bin\Debug\Logger.dll
+D:\Swati\PIS GPRS\PISGPRS\Communication\bin\Debug\Common.pdb
+D:\Swati\PIS GPRS\PISGPRS\Communication\bin\Debug\Logger.pdb
+D:\Swati\PIS GPRS\PISGPRS\Communication\obj\Debug\ResolveAssemblyReference.cache
+D:\Swati\PIS GPRS\PISGPRS\Communication\obj\Debug\Communication.dll
+D:\Swati\PIS GPRS\PISGPRS\Communication\obj\Debug\Communication.pdb

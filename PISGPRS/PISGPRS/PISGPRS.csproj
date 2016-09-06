@@ -1,0 +1,252 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="3.5" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.21022</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{EA01C27D-4A09-4FB5-8335-9A77E6F897DA}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>PISGPRS</RootNamespace>
+    <AssemblyName>PISGPRS</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <ApplicationIcon>logo.ico</ApplicationIcon>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.DirectoryServices" />
+    <Reference Include="System.Xml.Linq">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data.DataSetExtensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="About.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="About.Designer.cs">
+      <DependentUpon>About.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Coaches.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Coaches.Designer.cs">
+      <DependentUpon>Coaches.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Contact us.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Contact us.Designer.cs">
+      <DependentUpon>Contact us.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Login.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Login.Designer.cs">
+      <DependentUpon>Login.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Main.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Main.Designer.cs">
+      <DependentUpon>Main.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Model\BAL.cs" />
+    <Compile Include="Model\BaseClass.cs" />
+    <Compile Include="Model\DbConnection.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="About.resx">
+      <DependentUpon>About.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Coaches.resx">
+      <DependentUpon>Coaches.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Contact us.resx">
+      <DependentUpon>Contact us.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Login.resx">
+      <DependentUpon>Login.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Main.resx">
+      <DependentUpon>Main.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ResetPassword.resx">
+      <DependentUpon>ResetPassword.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Routes.resx">
+      <DependentUpon>Routes.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SMSDetails.resx">
+      <DependentUpon>SMSDetails.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ucConnectToPort.resx">
+      <DependentUpon>ucConnectToPort.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ucGPRSConnect.resx">
+      <DependentUpon>ucGPRSConnect.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ucSetRoute.resx">
+      <DependentUpon>ucSetRoute.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ucSignalStrength.resx">
+      <DependentUpon>ucSignalStrength.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ucUpdateCoachID.resx">
+      <DependentUpon>ucUpdateCoachID.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ucUploadFile.resx">
+      <DependentUpon>ucUploadFile.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Users.resx">
+      <DependentUpon>Users.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="ResetPassword.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ResetPassword.Designer.cs">
+      <DependentUpon>ResetPassword.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Routes.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Routes.Designer.cs">
+      <DependentUpon>Routes.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SMSDetails.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SMSDetails.Designer.cs">
+      <DependentUpon>SMSDetails.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ucConnectToPort.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ucConnectToPort.Designer.cs">
+      <DependentUpon>ucConnectToPort.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ucGPRSConnect.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ucGPRSConnect.Designer.cs">
+      <DependentUpon>ucGPRSConnect.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ucSetRoute.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ucSetRoute.Designer.cs">
+      <DependentUpon>ucSetRoute.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ucSignalStrength.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ucSignalStrength.Designer.cs">
+      <DependentUpon>ucSignalStrength.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ucUpdateCoachID.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ucUpdateCoachID.Designer.cs">
+      <DependentUpon>ucUpdateCoachID.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ucUploadFile.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ucUploadFile.Designer.cs">
+      <DependentUpon>ucUploadFile.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Users.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Users.Designer.cs">
+      <DependentUpon>Users.cs</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="logo.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Common\Common.csproj">
+      <Project>{78536E4A-0BFF-465C-A0D1-4BAB0B67F103}</Project>
+      <Name>Common</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Communication\Communication.csproj">
+      <Project>{A65258DC-07AC-4AFE-AEE9-D87913620258}</Project>
+      <Name>Communication</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Logger\Logger.csproj">
+      <Project>{25FE8D31-5E71-410C-8E46-148B29A38520}</Project>
+      <Name>Logger</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

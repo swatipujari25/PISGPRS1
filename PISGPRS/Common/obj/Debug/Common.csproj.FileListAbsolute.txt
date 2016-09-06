@@ -1,0 +1,10 @@
+E:\Front end GPRS\PISGPRS\Common\bin\Debug\Common.dll
+E:\Front end GPRS\PISGPRS\Common\bin\Debug\Common.pdb
+E:\Front end GPRS\PISGPRS\Common\obj\Debug\ResolveAssemblyReference.cache
+E:\Front end GPRS\PISGPRS\Common\obj\Debug\Common.dll
+E:\Front end GPRS\PISGPRS\Common\obj\Debug\Common.pdb
+D:\Swati\PIS GPRS\PISGPRS\Common\bin\Debug\Common.dll
+D:\Swati\PIS GPRS\PISGPRS\Common\bin\Debug\Common.pdb
+D:\Swati\PIS GPRS\PISGPRS\Common\obj\Debug\ResolveAssemblyReference.cache
+D:\Swati\PIS GPRS\PISGPRS\Common\obj\Debug\Common.dll
+D:\Swati\PIS GPRS\PISGPRS\Common\obj\Debug\Common.pdb

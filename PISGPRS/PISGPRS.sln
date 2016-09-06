@@ -1,0 +1,42 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 10.00
+# Visual Studio 2008
+Project("{54435603-DBB4-11D2-8724-00A0C9A8B90C}") = "PIS_SMS", "PIS_SMS\PIS_SMS.vdproj", "{DCB95A4A-F1AD-44A1-A14B-3F0003D78B42}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Common", "Common\Common.csproj", "{78536E4A-0BFF-465C-A0D1-4BAB0B67F103}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Logger", "Logger\Logger.csproj", "{25FE8D31-5E71-410C-8E46-148B29A38520}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Communication", "Communication\Communication.csproj", "{A65258DC-07AC-4AFE-AEE9-D87913620258}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PISGPRS", "PISGPRS\PISGPRS.csproj", "{EA01C27D-4A09-4FB5-8335-9A77E6F897DA}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{DCB95A4A-F1AD-44A1-A14B-3F0003D78B42}.Debug|Any CPU.ActiveCfg = Debug
+		{DCB95A4A-F1AD-44A1-A14B-3F0003D78B42}.Release|Any CPU.ActiveCfg = Release
+		{78536E4A-0BFF-465C-A0D1-4BAB0B67F103}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{78536E4A-0BFF-465C-A0D1-4BAB0B67F103}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{78536E4A-0BFF-465C-A0D1-4BAB0B67F103}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{78536E4A-0BFF-465C-A0D1-4BAB0B67F103}.Release|Any CPU.Build.0 = Release|Any CPU
+		{25FE8D31-5E71-410C-8E46-148B29A38520}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{25FE8D31-5E71-410C-8E46-148B29A38520}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{25FE8D31-5E71-410C-8E46-148B29A38520}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{25FE8D31-5E71-410C-8E46-148B29A38520}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A65258DC-07AC-4AFE-AEE9-D87913620258}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A65258DC-07AC-4AFE-AEE9-D87913620258}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A65258DC-07AC-4AFE-AEE9-D87913620258}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A65258DC-07AC-4AFE-AEE9-D87913620258}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EA01C27D-4A09-4FB5-8335-9A77E6F897DA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EA01C27D-4A09-4FB5-8335-9A77E6F897DA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EA01C27D-4A09-4FB5-8335-9A77E6F897DA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EA01C27D-4A09-4FB5-8335-9A77E6F897DA}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
