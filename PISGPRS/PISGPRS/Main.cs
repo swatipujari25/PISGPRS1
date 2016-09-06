@@ -58,10 +58,10 @@ namespace PISGPRS
         public DisplaySigalStrength displaySignalStrengthDelegate;
 
         public delegate void Display();
-
         public Display IPAddressDelegate;
-
         public Display PortNoDelegate;
+
+        
 
         #endregion
 
@@ -539,7 +539,16 @@ namespace PISGPRS
                                 }
                                 else if (BaseClass.SentMsgCount == 3)
                                 {
+                                  //  setRouteControl.InvokeGrid();
+                                    Stop_Reset_D_Counter();
                                     setRouteControl.InvokeGrid();
+
+                                    string xx = Constants.CurrentRequest;
+                                    if (BaseClass.ListSelectedDgvRows.Count != 0)
+                                    {
+                                        Constants.MessageSendStatus = string.Empty;
+                                        setRouteControl.SMSProcess();
+                                    }
                                 }
                                 else if (BaseClass.ListSelectedDgvRows.Count != 0)
                                 {
@@ -573,8 +582,19 @@ namespace PISGPRS
                                 setRouteControl.SMSProcess();
                             }
                             else if (BaseClass.SentMsgCount == 3)
-                            {
+                            {                              
+                               
+                                Stop_Reset_D_Counter();
                                 setRouteControl.InvokeGrid();
+
+                                string xx = Constants.CurrentRequest;
+                                if (BaseClass.ListSelectedDgvRows.Count != 0)
+                                {
+                                    Constants.MessageSendStatus = string.Empty;
+                                    setRouteControl.SMSProcess();
+                                }
+                            
+                               // Constants.IsConnectionBreak = true;
                             }
                             else if (BaseClass.ListSelectedDgvRows.Count != 0)
                             {
@@ -593,6 +613,11 @@ namespace PISGPRS
                             BaseClass.CurrentProcess = string.Empty;
                             BaseClass.IsSendOperationInprocess = false;
                             Constants.IsProcessCancelled = false;
+                            //if (Constants.IsConnectionBreak)
+                            //{
+                            //    Constants.ConnectionStatus = string.Empty;
+                            //    Constants.IsConnectionBreak = false;
+                            //}
                         }
                         #endregion
                     }

@@ -103,10 +103,10 @@ namespace PISGPRS
             {
                 if (Constants.CurrentRequest != Constants.Commands.ConnectToClient.ToString())
                 {
-                    if (!Constants.IsConnectionBreak)
-                    {
+                    //if (!Constants.IsConnectionBreak)
+                    //{
                         dgvCoach.Rows[BaseClass.dgvRowIndex].Cells["Status"].Value = Constants.MessageSendStatus;
-                    }
+                    //}
 
                     if (!String.IsNullOrEmpty(Constants.MessageSendStatus))
                     {

@@ -1,97 +1,212 @@
-Source        : System
-Method        : WinIOError
-Date          : 10:50:59 AM
-Time          : 05/07/2016
-Computer      : Scs-PC
-Error         : A device attached to the system is not functioning.
-Stack Trace   : at System.IO.Ports.InternalResources.WinIOError(Int32 errorCode, String str)
-   at System.IO.Ports.SerialStream.EndWrite(IAsyncResult asyncResult)
-   at System.IO.Ports.SerialStream.Write(Byte[] array, Int32 offset, Int32 count, Int32 timeout)
-   at System.IO.Ports.SerialPort.Write(String text)
-   at Communication.SerialComm.ExecuteCommand(String command) in D:\Swati\PIS GPRS\PISGPRS\Communication\SerialComm.cs:line 492
-======================================
-TX :AT
-RX :ATOK
-TX :ATE0
-RX :ATE0
-RX :OK
-TX :AT+CREG=1
-RX :
-RX :OK
-TX :AT+CGATT=1
-RX :OK
 TX :AT
 RX :OK
-RX :
 TX :ATE0
 RX :OK
 TX :AT+CREG=1
 RX :OK
 TX :AT+CGATT=1
+RX :ERROR
+RX :
+TX :AT+CMGS="+919642343212"
+RX :>
+TX :route 12724
+RX :ERROR
+RX :
+TX :AT+CMGS="+919642343212"
+RX :>
+TX :route 12724
+RX :ERROR
+RX :
+TX :AT+CMGS="+919642343212"
+RX :>
+TX :route 12724
+RX :ERROR
+RX :
+TX :AT
 RX :OK
-TX :AT+CIPSHUT
-RX :SHUT OK
+TX :ATE0
+RX :OK
+TX :AT+CREG=1
+RX :OK
 TX :AT+CGATT=1
-RX :OK
-TX :AT+CIPSERVER=1,1234
-RX :OK
-RX :S
-RX :ERVER OK
-TX :AT+CIFSR
-RX :100.66.207.51
-TX :AT+CIPSTATUS
-RX :OKSTAT
-RX :E: SERVER LISTENING
+RX :ERROR
+RX :+CREG
+RX :: 3
+TX :AT+CMGS="+919642343212"
+RX :>
+TX :route 12724
+RX :ERROR
+RX :
+TX :AT+CMGS="+919642343212"
+RX :>
+TX :route 12724
+RX :ERROR
+TX :AT+CMGS="+919642343212"
+RX :>
+TX :route 12724
+RX :ERROR
+TX :AT+CMGS="+919676014499"
+RX :>
+TX :route 12724
+RX :ERROR
+RX :
+TX :AT+CMGS="+919676014499"
+RX :>
+TX :route 12724
+RX :ERROR
+RX :
+TX :AT+CMGS="+919676014499"
+RX :>
+TX :route 12724
+RX :ERROR
+RX :
+TX :AT+CMGS="+919642343212"
+RX :>
+TX :route 12724
+RX :ERROR
+RX :
+TX :AT+CMGS="+919642343212"
+RX :>
+TX :route 12724
+RX :ERROR
+RX :
+TX :AT+CMGS="+919642343212"
+RX :>
+TX :route 12724
+RX :ERROR
+RX :
+TX :AT+CMGS="+919676014499"
+RX :>
+TX :route 12724
+RX :ERROR
+RX :
+TX :AT+CMGS="+919676014499"
+RX :>
+TX :route 12724
+RX :ERROR
+RX :
+TX :AT+CMGS="+919676014499"
+RX :>
+TX :route 12724
+RX :ERROR
+RX :
+TX :AT+CMGS="+918885212132"
+RX :>
+TX :route 12724
+RX :ERROR
+RX :
+TX :AT+CMGS="+918885212132"
+RX :>
+TX :route 12724
+RX :ERROR
+RX :
+TX :AT+CMGS="+918885212132"
+RX :>
+TX :route 12724
+RX :ERROR
+RX :
+TX :AT+CMGS="+918019307630"
+RX :>
+TX :route 12724
+RX :ERROR
+RX :
+TX :AT+CMGS="+918019307630"
+RX :>
+TX :route 12724
+RX :ERROR
+RX :
+TX :AT+CMGS="+918019307630"
+RX :>
+TX :route 12724
+RX :ERROR
+RX :
+TX :AT+CMGS="+919000612081"
+RX :>
+TX :route 12724
+RX :ERROR
+RX :
+TX :AT+CMGS="+919000612081"
+RX :>
+TX :route 12724
+RX :ERROR
+RX :
+TX :AT+CMGS="+919000612081"
+RX :>
+TX :route 12724
+RX :ERROR
+RX :
+TX :AT+CMGS="+919885495296"
+RX :>
+TX :route 12724
+RX :ERROR
+RX :
+TX :AT+CMGS="+919885495296"
+RX :>
+TX :route 12724
+RX :ERROR
+RX :
+TX :AT+CMGS="+919885495296"
+RX :>
+TX :route 12724
+RX :ERROR
+RX :
 TX :AT+CMGS="+917331153863"
 RX :>
-TX :Connect GPRS IP:100.66.207.51, PortNo:1234
-RX :+CMGS: 2
-RX :02OK
-Source        : System
-Method        : WinIOError
-Date          : 11:12:12 AM
-Time          : 05/07/2016
-Computer      : Scs-PC
-Error         : A device attached to the system is not functioning.
-Stack Trace   : at System.IO.Ports.InternalResources.WinIOError(Int32 errorCode, String str)
-   at System.IO.Ports.SerialStream.EndWrite(IAsyncResult asyncResult)
-   at System.IO.Ports.SerialStream.Write(Byte[] array, Int32 offset, Int32 count, Int32 timeout)
-   at System.IO.Ports.SerialPort.Write(String text)
-   at Communication.SerialComm.ExecuteCommand(String command) in D:\Swati\PIS GPRS\PISGPRS\Communication\SerialComm.cs:line 492
-======================================
-Source        : System
-Method        : WinIOError
-Date          : 11:19:10 AM
-Time          : 05/07/2016
-Computer      : Scs-PC
-Error         : Access to the port is denied.
-Stack Trace   : at System.IO.Ports.InternalResources.WinIOError(Int32 errorCode, String str)
-   at System.IO.Ports.InternalResources.WinIOError()
-   at System.IO.Ports.SerialStream.Dispose(Boolean disposing)
-   at System.IO.Stream.Close()
-   at System.IO.Ports.SerialPort.Dispose(Boolean disposing)
-   at System.IO.Ports.SerialPort.Close()
-   at Communication.SerialComm.Close() in D:\Swati\PIS GPRS\PISGPRS\Communication\SerialComm.cs:line 214
-======================================
-Source        : System
-Method        : WinIOError
-Date          : 11:19:10 AM
-Time          : 05/07/2016
-Computer      : Scs-PC
-Error         : Access to the port 'COM25' is denied.
-Stack Trace   : at System.IO.Ports.InternalResources.WinIOError(Int32 errorCode, String str)
-   at System.IO.Ports.SerialStream..ctor(String portName, Int32 baudRate, Parity parity, Int32 dataBits, StopBits stopBits, Int32 readTimeout, Int32 writeTimeout, Handshake handshake, Boolean dtrEnable, Boolean rtsEnable, Boolean discardNull, Byte parityReplace)
-   at System.IO.Ports.SerialPort.Open()
-   at Communication.SerialComm.Connect() in D:\Swati\PIS GPRS\PISGPRS\Communication\SerialComm.cs:line 172
-======================================
-Source        : System
-Method        : WinIOError
-Date          : 11:19:23 AM
-Time          : 05/07/2016
-Computer      : Scs-PC
-Error         : Access to the port 'COM25' is denied.
-Stack Trace   : at System.IO.Ports.InternalResources.WinIOError(Int32 errorCode, String str)
-   at System.IO.Ports.SerialStream..ctor(String portName, Int32 baudRate, Parity parity, Int32 dataBits, StopBits stopBits, Int32 readTimeout, Int32 writeTimeout, Handshake handshake, Boolean dtrEnable, Boolean rtsEnable, Boolean discardNull, Byte parityReplace)
-   at System.IO.Ports.SerialPort.Open()
-   at Communication.SerialComm.Connect() in D:\Swati\PIS GPRS\PISGPRS\Communication\SerialComm.cs:line 172
-======================================
+TX :route 12724
+RX :ERROR
+RX :
+TX :AT+CMGS="+917331153863"
+RX :>
+TX :route 12724
+RX :ERROR
+RX :
+TX :AT+CMGS="+917331153863"
+RX :>
+TX :route 12724
+RX :ERROR
+RX :
+TX :AT+CMGS="+918374655934"
+RX :>
+TX :route 12724
+RX :ERROR
+RX :
+TX :AT+CMGS="+918374655934"
+RX :>
+TX :route 12724
+RX :ERROR
+RX :
+TX :AT+CMGS="+918374655934"
+RX :>
+TX :route 12724
+RX :ERROR
+RX :
+TX :AT+CMGS="+919908209454"
+RX :>
+TX :route 12724
+RX :ERROR
+RX :
+TX :AT+CMGS="+919908209454"
+RX :>
+TX :route 12724
+RX :ERROR
+RX :
+TX :AT+CMGS="+919908209454"
+RX :>
+TX :route 12724
+RX :ERROR
+RX :
+TX :AT+CMGS="+917331153865"
+RX :>
+TX :route 12724
+RX :ERROR
+RX :
+TX :AT+CMGS="+917331153865"
+RX :>
+TX :route 12724
+RX :ERROR
+RX :
+TX :AT+CMGS="+917331153865"
+RX :>
+TX :route 12724
+RX :ERROR
+RX :
