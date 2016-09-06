@@ -62,9 +62,9 @@
             this.label2.ForeColor = System.Drawing.Color.ForestGreen;
             this.label2.Location = new System.Drawing.Point(214, 61);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(394, 18);
+            this.label2.Size = new System.Drawing.Size(397, 18);
             this.label2.TabIndex = 1;
-            this.label2.Text = "Ver No : 1   Rev No : 4   Dated : 07 May 2016 10:00";
+            this.label2.Text = "Ver No : 1   Rev No : 5   Dated : 07 Sept 2016 10:00";
             // 
             // label3
             // 

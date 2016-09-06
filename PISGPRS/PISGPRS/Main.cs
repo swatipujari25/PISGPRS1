@@ -640,12 +640,30 @@ namespace PISGPRS
                             Constants.CurrentRequest = string.Empty;
                         }
                     }
-                    else if (Constants.listMessages.Count > 0)// (!Constants.receivingInprocess && Constants.IsResponseSuccess)
+                    else if (Constants.ReadMsgsIndex.Count > 0)//(Constants.listMessages.Count > 0)//
                     {
                         Constants.IsResponseSuccess = false;
                         Constants.receivingInprocess = false;
                         Stop_Reset_D_Counter();
                         InvokeGridWithResponse();
+                        // Constants.CurrentRequest = string.Empty;
+                        //added by swati on 6th sept 2016
+                        #region Delete all the received messages from Modem Inbox
+
+
+                        if (Constants.ReadMsgsIndex.Count > 0)
+                        {
+                            Constants.CurrentRequest = Constants.Commands.Delete.ToString();
+                            BaseClass.SRPortComm.DeleteMessage(Constants.ReadMsgsIndex.Dequeue());
+                            BaseClass.timeCounter = 10000;
+                            BaseClass.counterWatch.Start();
+                        }
+
+                        #endregion
+                    }
+                    else
+                    {
+                        Stop_Reset_D_Counter();
                         Constants.CurrentRequest = string.Empty;
                     }
                 }
@@ -666,10 +684,23 @@ namespace PISGPRS
                             Constants.CurrentRequest = string.Empty;
                         }
                     }
-                    else if (Constants.listMessages.Count > 0)// (!Constants.receivingInprocess && Constants.IsResponseSuccess)
+                    //else if (Constants.listMessages.Count > 0)// (!Constants.receivingInprocess && Constants.IsResponseSuccess)
+                    //{
+                    //    Stop_Reset_D_Counter();
+                    //    Constants.CurrentRequest = string.Empty;
+                    //}
+                    else if (Constants.ReadMsgsIndex.Count > 0)
                     {
                         Stop_Reset_D_Counter();
-                        Constants.CurrentRequest = string.Empty;
+                        Constants.CurrentRequest = Constants.Commands.Delete.ToString();
+                        BaseClass.SRPortComm.DeleteMessage(Constants.ReadMsgsIndex.Dequeue());
+                        BaseClass.timeCounter = 10000;
+                        BaseClass.counterWatch.Start();
+                    }
+                    else
+                    {
+                        Stop_Reset_D_Counter();
+                          Constants.CurrentRequest = string.Empty;
                     }
                 }
                 #endregion
@@ -1645,7 +1676,7 @@ namespace PISGPRS
                 BaseClass.timeCounter = 10000;
                 BaseClass.counterWatch.Start();
 
-                // UpdateGridWithNewMessages();
+               
             }
             catch (Exception ex)
             {
@@ -1679,7 +1710,7 @@ namespace PISGPRS
                 string[] split = new string[1];
                 string coachNo = string.Empty;
                 int Id = 0;
-
+              
                 string selectedTrainNo = setRouteControl.cboTrainNo.Text;
                 string[] splitx = selectedTrainNo.Split('-');
                 if (splitx.Length == 2)
@@ -1691,6 +1722,7 @@ namespace PISGPRS
                 {
                     for (int msgcount = 0; msgcount < Constants.listMessages.Count; msgcount++)
                     {
+
                         SplitMessage msgModel = Constants.listMessages[msgcount];
 
                         #region Get Date and Time from message
@@ -1732,6 +1764,7 @@ namespace PISGPRS
 
                                     if (splitColan.Length >= 2)
                                     {
+                                       
                                         trainNo = splitColan[1].ToString().Trim();
 
                                         string[] splitComma = trainNo.Split(',');
@@ -1840,8 +1873,7 @@ namespace PISGPRS
                                         if (msgModel.Sender.ToString() == setRouteControl.dgvCoach.Rows[ix].Cells["SIMNo"].Value.ToString())
                                         {
                                             if (!string.IsNullOrEmpty(trainNo) && !string.IsNullOrEmpty(command))
-                                            {
-                                                                                         
+                                            {                                                                                        
 
                                                 if ((selectedCommand == command)
                                                     && selectedTrainNo == trainNo && dtSMS != null)
@@ -1962,15 +1994,22 @@ namespace PISGPRS
 
                         setRouteControl.dgvCoach.Columns["Response"].DefaultCellStyle.WrapMode = DataGridViewTriState.True;
                         setRouteControl.dgvCoach.AutoSizeRowsMode = DataGridViewAutoSizeRowsMode.AllCells;
+                      
                     }
                 }
 
-                #region Delete all the received messages from Modem Inbox
-                Constants.CurrentRequest = Constants.Commands.Delete.ToString();
-                BaseClass.SRPortComm.DeleteMessage();
-                BaseClass.timeCounter = 10000;
-                BaseClass.counterWatch.Start();
-                #endregion
+                //#region Delete all the received messages from Modem Inbox
+                //Constants.CurrentRequest = Constants.Commands.Delete.ToString();
+
+                //for (int msgcount = 0; msgcount < Constants.listMessages.Count; msgcount++)
+                //{
+                    
+                //    BaseClass.SRPortComm.DeleteMessage( Constants.listMessages[msgcount].Index);
+                //    BaseClass.timeCounter = 10000;
+                //    BaseClass.counterWatch.Start();
+                //}
+                
+                //#endregion
             }
             catch (Exception ex)
             {

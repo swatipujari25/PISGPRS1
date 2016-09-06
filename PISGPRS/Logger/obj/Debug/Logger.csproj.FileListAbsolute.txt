@@ -13,8 +13,13 @@ E:\Front end GPRS\PISGPRS 1.4 version 070516\Logger\bin\Debug\Logger.pdb
 E:\Front end GPRS\PISGPRS 1.4 version 070516\Logger\obj\Debug\ResolveAssemblyReference.cache
 E:\Front end GPRS\PISGPRS 1.4 version 070516\Logger\obj\Debug\Logger.dll
 E:\Front end GPRS\PISGPRS 1.4 version 070516\Logger\obj\Debug\Logger.pdb
-D:\Swati\PIS GPRS\PISGPRS 1.4 version 090516\Logger\bin\Debug\Logger.dll
-D:\Swati\PIS GPRS\PISGPRS 1.4 version 090516\Logger\bin\Debug\Logger.pdb
-D:\Swati\PIS GPRS\PISGPRS 1.4 version 090516\Logger\obj\Debug\ResolveAssemblyReference.cache
-D:\Swati\PIS GPRS\PISGPRS 1.4 version 090516\Logger\obj\Debug\Logger.dll
-D:\Swati\PIS GPRS\PISGPRS 1.4 version 090516\Logger\obj\Debug\Logger.pdb
+C:\Users\Scs\Desktop\PISGPRS 1.4 version 070516\Logger\bin\Debug\Logger.dll
+C:\Users\Scs\Desktop\PISGPRS 1.4 version 070516\Logger\bin\Debug\Logger.pdb
+C:\Users\Scs\Desktop\PISGPRS 1.4 version 070516\Logger\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\Scs\Desktop\PISGPRS 1.4 version 070516\Logger\obj\Debug\Logger.dll
+C:\Users\Scs\Desktop\PISGPRS 1.4 version 070516\Logger\obj\Debug\Logger.pdb
+F:\PISGPRS 1.4 version 070516\Logger\bin\Debug\Logger.dll
+F:\PISGPRS 1.4 version 070516\Logger\bin\Debug\Logger.pdb
+F:\PISGPRS 1.4 version 070516\Logger\obj\Debug\ResolveAssemblyReference.cache
+F:\PISGPRS 1.4 version 070516\Logger\obj\Debug\Logger.dll
+F:\PISGPRS 1.4 version 070516\Logger\obj\Debug\Logger.pdb

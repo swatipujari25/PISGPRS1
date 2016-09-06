@@ -1161,7 +1161,7 @@ namespace Communication
         /// Delete received messages
         /// </summary>
         /// <returns></returns>
-        public void DeleteMessage()
+        public void DeleteMessage(string index)
         {
             Constants.IsResponseSuccess = false;
             Constants.IsConnectionBreak = false;
@@ -1170,7 +1170,7 @@ namespace Communication
             try
             {
                 buffer = string.Empty;
-                command = GetCommand(string.Empty);
+                command = GetCommand(index);
 
                 recievedData = ExecuteCommand(command);
                 Constants.receivingInprocess = true;
@@ -1220,6 +1220,8 @@ namespace Communication
                     listMessages.Add(msg);
 
                     m = m.NextMatch();
+
+                    Constants.ReadMsgsIndex.Enqueue(msg.Index);
                 }
             }
             catch (Exception ex)
@@ -1258,7 +1260,8 @@ namespace Communication
                 }
                 else if (Constants.CurrentRequest == Constants.Commands.Delete.ToString())
                 {
-                    reqCommand = "AT+CMGDA=\"DEL ALL\"\r\n";
+                  //  reqCommand = "AT+CMGDA=\"DEL ALL\"\r\n";
+                    reqCommand = "AT+CMGD=" + parameter + "\r\n";
                 }
                 #endregion
 

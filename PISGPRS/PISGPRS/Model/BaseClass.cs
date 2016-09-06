@@ -42,6 +42,7 @@ namespace PISGPRS
     public static int milliTime = 0;
     public static int dgvRowIndex = 0;
     public static List<int> ListSelectedDgvRows = new List<int>();
+  
 
         public enum CRUDOperations
         {

@@ -101,6 +101,9 @@ namespace Common
       public static string currentTrainNo = string.Empty;
 
       public static string MessageSendStatus = string.Empty;
+
+        //Get index number of every new message
+      public static Queue<string> ReadMsgsIndex = new Queue<string>();
         
         public enum Commands
         {
